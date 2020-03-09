@@ -128,16 +128,18 @@ packages:
   flutter_android_pip:
     dependency: "direct main"
     description:
-      name: flutter_android_pip
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.2"
+      path: "."
+      ref: HEAD
+      resolved-ref: e4f70cfd100304c7146dc490d2af10ea97d4de6b
+      url: "https://github.com/ram2939/flutter_android_pip"
+    source: git
+    version: "1.0.0+1"
   flutter_screen_recording:
     dependency: "direct main"
     description:
-      name: flutter_screen_recording
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "..\\..\\flutter_screen_recording"
+      relative: true
+    source: path
     version: "1.0.4"
   flutter_test:
     dependency: "direct dev"
@@ -226,6 +228,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0+1"
+  permission_handler:
+    dependency: "direct main"
+    description:
+      name: permission_handler
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.2.0+hotfix.3"
   petitparser:
     dependency: transitive
     description:

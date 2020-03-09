@@ -41,13 +41,13 @@ class _CameraAppState extends State<CameraApp> {
     // if (!controller.value.isInitialized) {
     //   return Container();
     // }
+    double aspectRatio=controller.value.aspectRatio;
+    if(pip)
+    aspectRatio=1/1;
     return 
         controller!=null
         ? AspectRatio(
-          aspectRatio:
-          pip==true
-          ?2/1
-          :1/1,
+          aspectRatio:aspectRatio,
           child: CameraPreview(controller))
          :Center(
            child: CircularProgressIndicator(
